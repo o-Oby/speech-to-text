@@ -29,7 +29,7 @@ This script transcribes an audio file using OpenAI's Whisper model and optionall
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/speech-to-text.git
+    git clone https://github.com/o-Oby/speech-to-text.git
     cd speech-to-text
     ```
 
