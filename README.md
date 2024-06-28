@@ -29,21 +29,21 @@ This script transcribes an audio file using OpenAI's Whisper model and optionall
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/o-Oby/speech-to-text.git
+    git clone https://github.com/your-username/speech-to-text.git
     cd speech-to-text
     ```
 
 2. **Install dependencies:**
 
     ```bash
-    npm install
+    npm install fs path form-data axios readline-sync openai progress chalk
     ```
 
 ## Setup
 
 1. **Update API Key:**
 
-    Open the `audio.js` file and replace the placeholder API key with your actual OpenAI API key.
+    Open the `transcribe_and_postprocess.js` file and replace the placeholder API key with your actual OpenAI API key.
 
     ```javascript
     const configuration = new Configuration({
@@ -64,7 +64,7 @@ This script transcribes an audio file using OpenAI's Whisper model and optionall
 1. **Run the script:**
 
     ```bash
-    node audio.js
+    node transcribe_and_postprocess.js
     ```
 
 2. **Follow the prompts:**
@@ -76,6 +76,10 @@ This script transcribes an audio file using OpenAI's Whisper model and optionall
 
 - **transcription.txt**: Contains the initial transcription of the audio file.
 - **corrected_transcription.txt**: Contains the corrected transcription (if post-processed with GPT-4o).
+
+## Notes
+
+- **File uploads are currently limited to 25 MB.** Ensure your audio file size does not exceed this limit.
 
 ## License
 
